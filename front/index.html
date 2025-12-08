@@ -27,7 +27,29 @@
     <h2>Lista de Municípios</h2>
     <div id="listagem" class="container"></div>
 
-    
+    <!-- MODAL DE EDIÇÃO -->
+    <div id="modalEditar" class="modal">
+        <div class="modal-conteudo">
+            <h3>Editar Município</h3>
+
+            <input type="hidden" id="editId">
+
+            <label>Nome</label>
+            <input type="text" id="editNome">
+
+            <label>UF</label>
+            <input type="text" id="editUF">
+
+            <label>Característica</label>
+            <input type="text" id="editCaract">
+
+            <div class="modal-botoes">
+                <button id="btnSalvarEdicao">Salvar Alterações</button>
+                <button onclick="fecharModal()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
