@@ -39,6 +39,7 @@ button:hover {
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 20px;
+    flex-direction: column;
 }
 
 .card {
