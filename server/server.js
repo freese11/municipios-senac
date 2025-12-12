@@ -4,6 +4,7 @@ require("dotenv").config();
 const cors = require('cors');
 
 const municipiosRouter = require("./routes/municipios");
+const autenticarAPIkey = require("./autorizar");
 
 const app = express();
 app.use(cors());
@@ -13,6 +14,7 @@ app.use(express.json());
 // =====================
 // Rotas principais
 // =====================
+app.use(autenticarAPIkey)
 app.use("/municipios", municipiosRouter);
 
 // Rota raiz
